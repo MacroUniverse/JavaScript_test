@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<div id = 1></div>
+		<div id = a></div><br>
+		<input id="b"><br>
+		<button onclick="myfun2()">按钮文字</button>
+		<script src="test.js"></script>
 		<script>
-			elm = document.getElementById("1");
-   			elm.innerHTML = "hello world 1!";
-			document.write("hello world 2!")
-			console.log("hello world 3!");
-			window.alert("hello world 4!");
+			window.alert(Math.PI)
+			a = [[1.2345,Math.PI],[3e10,4]]
+			str = "123"
+			window.alert(str[2]);
+			function mat2str(a) {
+				str = /*注释*/ "";
+				for (i = 0; i < a.length; ++i) {
+					for (j = 0; j < a[i].length; ++j) {
+						snum = a[i][j].toPrecision(4).toString();
+						str += snum + " "
+					}
+					str += "\n"
+				}
+				return str
+			}
 		</script>
 	</body>
 </html>

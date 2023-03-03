@@ -5,11 +5,13 @@
 		<input id="b"><br>
 		<button onclick="myfun2()">按钮文字</button>
 		<script src="test.js"></script>
-		<script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+		<script src="math.js"></script>
 		<script>
 			'use strict'
-			window.alert(math.round(math.e, 3))
-			window.alert(Math.PI)
+			let c1 = math.complex(2, 3)
+			let c2 = math.complex(3, 4)
+			window.alert("(2+3i)(3+4i) = " + math.multiply(c1, c2))
+			window.alert("Math.PI = " + Math.PI)
 			a = [[1.2345,Math.PI],[3e10,4]]
 			str = "123"
 			window.alert(str[2]);

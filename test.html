@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<script src="test1.js"></script>
+		<script>console.log('inline script1')</script>
+		<script src="test2.js"></script>
+		<script>console.log('inline script2')</script>
+	</head>
 	<body>
+		<script>console.log('inline script3')</script>
+		<script src="test3.js"></script>
+
 		<div id = a></div><br>
 		<input id="b"><br>
 		<button onclick="myfun2()">按钮文字</button>
+		
 		<script src="test.js"></script>
 		<script src="math.js"></script>
 		<script>
